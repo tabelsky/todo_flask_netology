@@ -1,0 +1,6 @@
+DEFAULT_USER_NAME = "test_user_1"
+NEW_USER_NAME = "new_user"
+NEW_USER_NAME_WITH_TODOS = "new_user_with_todos"
+DEFAULT_USER_PASSWORD = "Test_Password_1"
+NEW_TODO_ITEM_IMPORTANT = "new_todo_item_important"
+NEW_TODO_ITEM_NOT_IMPORTANT = "new_todo_item_not_important"

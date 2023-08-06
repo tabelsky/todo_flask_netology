@@ -1,0 +1,10 @@
+FROM python:3.10.13-alpine3.18
+COPY ./app /app
+
+WORKDIR /app
+COPY requirements.txt /app
+COPY requirements-dev.txt /app
+RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements-dev.txt
+
+ENTRYPOINT pytest tests -W ignore::DeprecationWarning

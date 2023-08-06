@@ -1,0 +1,6 @@
+Flask==2.3.2
+Flask-Bcrypt==1.0.1
+gunicorn==21.2.0
+psycopg2-binary==2.9.6
+pydantic==2.1.1
+SQLAlchemy==2.0.19
