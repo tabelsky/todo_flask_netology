@@ -2,11 +2,8 @@ import pytest
 
 from .api_client import HttpError
 from .constants import (
-    DEFAULT_USER_NAME,
-    DEFAULT_USER_PASSWORD,
     NEW_TODO_ITEM_IMPORTANT,
     NEW_TODO_ITEM_NOT_IMPORTANT,
-    NEW_USER_NAME,
 )
 
 

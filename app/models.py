@@ -67,7 +67,6 @@ class Token(Base):
 
 
 class Todo(Base):
-
     __tablename__ = "todo"
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(50), nullable=False)
@@ -97,6 +96,4 @@ class Todo(Base):
 MODEL_TYPE = Type[User | Token | Todo]
 MODEL = User | Token | Todo
 
-
-Base.metadata.drop_all(bind=engine)
 Base.metadata.create_all(bind=engine)
